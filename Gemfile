@@ -29,7 +29,10 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # for scheduler
 gem 'whenever'
-
+group :production do
+     
+     gem 'rails_12factor' # this gem for heroku server, It required for running applicaiton at heroku 
+end
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
